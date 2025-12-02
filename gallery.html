@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Classic - Blog Page</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                    
+    <link rel="stylesheet" href="css/style.css">
+<style>
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 70%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+margin-left: 370px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+margin-left: 370px;
+}
+
+
+</style>
+
+</head>
+
+    <body>
+    <div class="header">
+            <div class="container-fluid">
+                <div class="header-inner">
+                    <a href="index.html" class="navbar-brand site-name"><img src="logo.jpg" width="120" height="120" alt=""/></a>
+                   
+           
+                    <nav class="navbar main-nav">
+
+                        <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#tmNavbar">
+                            &#9776;
+                        </button>
+                       
+                        <div class="collapse navbar-toggleable-sm" id="tmNavbar">
+                            <ul class="nav navbar-nav">
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="about.html" class="nav-link">About</a>
+                                </li>
+<li class="nav-item">
+                                    <a href="menu.html" class="nav-link">Menu</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a href="gallery.html" class="nav-link">FAQ<br>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link">Contact</a>
+                                </li>
+                            </ul>                        
+                        </div>
+                       
+                    </nav>  
+
+                </div>                                  
+            </div>            
+        </div>
+
+       
+        <div class="header">
+            <div class="container-fluid"> </div>            
+        </div>
+
+        <div class="blog-img-container">
+             <br><br><br> <p class="h2" style="color: white; text-align:center;">FAQ</p>
+        </div>
+
+        <section class="section">
+            <div class="container-fluid">
+              <div class="row"></div>
+               
+            </div>
+        </section>
+<button class="accordion"> What are your hours of operation?</button>
+<div class="panel">
+  <p> We’re open seven days a week from 6:30 AM to 2:30 PM. Holiday hours may vary, so check our social media for updates.</p>
+</div>
+
+<button class="accordion">Do you make your bagels fresh each day?</button>
+<div class="panel">
+  <p> Yes! All of our bagels are made fresh every morning using traditional methods and high-quality ingredients.</p>
+</div>
+
+<button class="accordion">Do you offer gluten-free or vegan options?</button>
+<div class="panel">
+  <p> While we don’t offer gluten-free bagels at this time, we do have vegan-friendly spreads and sandwich options. Ask our staff for suggestions!</p>
+</div>
+<button class="accordion">Can I place a large order for an event or office meeting?</button>
+<div class="panel">
+  <p> Absolutely. We offer catering trays, bulk bagel orders, and sandwich platters. Please place large orders at least 24–48 hours in advance.</p>
+</div>
+<button class="accordion">Do you have outdoor seating or dine-in options?</button>
+<div class="panel">
+  <p> Yes, we offer both indoor and outdoor seating, and all items are available for dine-in or take-out.</p>
+</div>
+<button class="accordion">Where are you located?</button>
+<div class="panel">
+  <p> We’re located at 323 North Coast Highway, Oceanside, CA, along the historic Highway 101 route.</p>
+</div>
+<button class="accordion">Do you offer delivery?</button>
+<div class="panel">
+  <p> At this time, we offer pickup only, but customers are welcome to order ahead by phone.</p>
+</div>
+
+       <h1></h1>
+<h1></h1>
+ <section class="section">
+            <div class="container-fluid">
+                <div class="row"></div>
+
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                  <div class="clearfix hidden-lg-up"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 copyright-col">
+                        <p class="copyright-text">Copyright 2016 Your Company Name</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+       <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+</script>
+</body>
+</html>
